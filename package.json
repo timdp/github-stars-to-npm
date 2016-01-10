@@ -1,0 +1,55 @@
+{
+  "name": "github-stars-to-npm",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Stars every npm package you've starred on GitHub.",
+  "keywords": [],
+  "author": "Tim De Pauw <hi@tmdpw.eu> (https://tmdpw.eu/)",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.3.19",
+    "bluebird": "^3.1.1",
+    "got": "^6.0.0",
+    "npm-registry-client": "^7.0.9",
+    "octonode": "^0.7.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-plugin-transform-runtime": "^6.4.0",
+    "babel-preset-es2015-generators-async": "^6.3.13",
+    "chai": "^3.4.1",
+    "chai-as-promised": "^5.2.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-mocha": "^2.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "isparta": "^4.0.0",
+    "mkdirp": "^0.5.1",
+    "run-sequence": "^1.1.5",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "standard": "^5.4.1",
+    "tmp": "0.0.28"
+  },
+  "scripts": {
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "test": "node node_modules/standard/bin/cmd.js && gulp test"
+  },
+  "repository": "timdp/github-stars-to-npm",
+  "bugs": {
+    "url": "https://github.com/timdp/github-stars-to-npm/issues"
+  },
+  "license": "MIT",
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
